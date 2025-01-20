@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Save the Date</title>
+  <style>
+    /* Remove default margin/padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      background-color: #005950; /* The teal color */
+    }
+
+    /* A container to hold the image and the button */
+    .container {
+      position: relative; /* Makes it possible to position child elements absolutely */
+      width: 100%;
+      max-width: 1080px; /* Adjust to suit your needs */
+      margin: 0 auto;
+    }
+
+    /* The invitation image should scale responsively */
+    .invitation-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* The RSVP button is positioned absolutely on top of the image */
+    .rsvp-button {
+  position: absolute;
+  top: 86%; 
+  left: 72%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  /* Font size (change the value as you prefer) */
+  font-size: 1.2rem;
+  
+  padding: 1rem 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+    }
+
+    .rsvp-button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Replace with your actual image file -->
+    <img 
+      src="full-web.png" 
+      alt="Save the Date Invitation" 
+      class="invitation-image"
+    >
+
+    <!-- The clickable button placed on top of the image -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3waASdLVAe0E1AQasfaRzoNLeuCQVCKzDHpR6A4rEiW-zcA/viewform?usp=header" target="_blank" class="rsvp-button">
+      CLICK HERE TO RSVP
+    </a>
+  </div>
+
+</body>
+</html>
