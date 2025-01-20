@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <!-- Make sure the page scales correctly on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Save the Date</title>
   <style>
     /* Remove default margin/padding */
@@ -15,7 +17,7 @@
     .container {
       position: relative; /* Makes it possible to position child elements absolutely */
       width: 100%;
-      max-width: 1080px; /* Adjust to suit your needs */
+      max-width: 1080px; /* Adjust or remove to suit your needs */
       margin: 0 auto;
     }
 
@@ -28,26 +30,45 @@
 
     /* The RSVP button is positioned absolutely on top of the image */
     .rsvp-button {
-  position: absolute;
-  top: 86%; 
-  left: 72%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  text-align: center;
-  /* Font size (change the value as you prefer) */
-  font-size: 1.2rem;
-  
-  padding: 1rem 1rem;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  transition: background-color 0.3s;
+      position: absolute;
+      top: 86%; 
+      left: 72%;
+      transform: translate(-50%, -50%);
+      display: inline-block;
+      text-align: center;
+      
+      /* Font size (change the value as you prefer) */
+      font-size: 1.2rem;
+      
+      padding: 1rem 1rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 5px;
+      transition: background-color 0.3s;
     }
 
     .rsvp-button:hover {
       background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /*
+      Optional media query:
+      Adjust button styling on smaller screens (e.g., phones) if needed.
+      You can change max-width to another breakpoint like 768px or 480px.
+    */
+    @media (max-width: 600px) {
+      .rsvp-button {
+        /* Maybe move the button so it doesn't go off-screen on very narrow phones */
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        /* Slightly smaller font/padding on tiny devices, if desired */
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+      }
     }
   </style>
 </head>
@@ -62,7 +83,11 @@
     >
 
     <!-- The clickable button placed on top of the image -->
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3waASdLVAe0E1AQasfaRzoNLeuCQVCKzDHpR6A4rEiW-zcA/viewform?usp=header" target="_blank" class="rsvp-button">
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSf3waASdLVAe0E1AQasfaRzoNLeuCQVCKzDHpR6A4rEiW-zcA/viewform?usp=header" 
+      target="_blank" 
+      class="rsvp-button"
+    >
       CLICK HERE TO RSVP
     </a>
   </div>
