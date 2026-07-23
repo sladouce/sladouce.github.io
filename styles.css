@@ -336,11 +336,6 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
-#study {
-  background: var(--surface);
-}
-
-.split-section,
 .ethics-section,
 .transform-section,
 .site-footer {
@@ -359,36 +354,10 @@ h3 {
   max-width: 920px;
 }
 
-.prose {
-  max-width: 760px;
-}
-
-.prose p,
 .ethics-list p,
 .site-footer p {
   margin: 0;
   color: var(--muted);
-}
-
-.prose p + p {
-  margin-top: 16px;
-}
-
-.study-image {
-  margin: 28px 0 0;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--surface);
-}
-
-.study-image img,
-.study-image video {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background: #0f1d24;
-  object-fit: cover;
 }
 
 .topic-grid {
@@ -530,7 +499,6 @@ figcaption {
 
 @media (max-width: 920px) {
   .hero,
-  .split-section,
   .ethics-section,
   .transform-section,
   .site-footer {
@@ -609,8 +577,7 @@ figcaption {
     margin-top: 28px;
   }
 
-  .hero-visual img,
-  .study-image {
+  .hero-visual img {
     box-shadow: 0 14px 34px rgba(24, 35, 47, 0.1);
   }
 
