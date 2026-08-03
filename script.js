@@ -1,12 +1,8 @@
 const surveyLinks = {
-  ar: "[INSERT_SURVEY_LINK_ARABIC]",
-  zh: "[INSERT_SURVEY_LINK_CHINESE]",
-  nl: "[INSERT_SURVEY_LINK_DUTCH]",
-  en: "[INSERT_SURVEY_LINK_EN]",
-  fr: "[INSERT_SURVEY_LINK_FR]",
-  de: "[INSERT_SURVEY_LINK_GERMAN]",
-  ary: "[INSERT_SURVEY_LINK_MOROCCAN]",
-  es: "[INSERT_SURVEY_LINK_SPANISH]"
+  zh: "https://cambridge.eu.qualtrics.com/jfe/form/SV_9FEBMduBCgDWP0W",
+  nl: "https://cambridge.eu.qualtrics.com/jfe/form/SV_5pXuIlkvJmiRT9A",
+  en: "https://cambridge.eu.qualtrics.com/jfe/form/SV_cAWycnadcuCxghM",
+  fr: "https://cambridge.eu.qualtrics.com/jfe/form/SV_0ibOQg6cNr94Wmq"
 };
 
 const surveyLanguageSelects = document.querySelectorAll(".survey-language");
