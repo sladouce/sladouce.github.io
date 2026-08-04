@@ -9,15 +9,20 @@ Static website files for the public survey page.
 - `script.js`
 - `site-assets/`
 
-## Before publishing
+## Footer logo links
 
-Replace the placeholder survey links in `script.js` and `index.html`:
+- CCA logo → https://cca.arct.cam.ac.uk/
+- NeuroCivitas logo → https://neurocivitas.group.cam.ac.uk/
 
-- `[INSERT_SURVEY_LINK_EN]`
-- `[INSERT_SURVEY_LINK_FR]`
-- `[INSERT_SURVEY_LINK_CHINESE]`
-- `[INSERT_SURVEY_LINK_DUTCH]`
-- `[INSERT_SURVEY_LINK_SPANISH]`
-- `[INSERT_SURVEY_LINK_GERMAN]`
+## Survey links
+
+Qualtrics survey links are set in `script.js` (`surveyLinks`) and mirrored as the default link in `index.html`:
+
+- English
+- French
+- Chinese
+- Dutch
+
+Spanish and German are not yet available — add them to `surveyLinks` in `script.js` if those translations go live.
 
 The page can be hosted as a static site, including with GitHub Pages.
