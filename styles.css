@@ -274,6 +274,15 @@ h3 {
   object-fit: contain;
 }
 
+.footer-logo-link {
+  display: block;
+  transition: opacity 0.15s ease;
+}
+
+.footer-logo-link:hover {
+  opacity: 0.85;
+}
+
 .logo-dark {
   display: inline-flex;
   align-items: center;
