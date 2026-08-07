@@ -18,11 +18,12 @@ Static website files for the public survey page.
 
 Qualtrics survey links are set in `script.js` (`surveyLinks`) and mirrored as the default link in `index.html`:
 
+- Arabic
 - English
 - French
 - Chinese
 - Dutch
 
-Spanish and German are not yet available — add them to `surveyLinks` in `script.js` if those translations go live.
+Spanish and German are not yet available — add them to `surveyLinks` in `script.js` (and as `<option>`s in the language `<select>` elements in `index.html`) if those translations go live.
 
 The page can be hosted as a static site, including with GitHub Pages.
