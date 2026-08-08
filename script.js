@@ -1,9 +1,9 @@
 const surveyLinks = {
-  zh: "https://cambridge.eu.qualtrics.com/jfe/form/SV_9FEBMduBCgDWP0W",
-  nl: "https://cambridge.eu.qualtrics.com/jfe/form/SV_5pXuIlkvJmiRT9A",
-  en: "https://cambridge.eu.qualtrics.com/jfe/form/SV_cAWycnadcuCxghM",
-  fr: "https://cambridge.eu.qualtrics.com/jfe/form/SV_0ibOQg6cNr94Wmq",
-  ar: "https://cambridge.eu.qualtrics.com/jfe/form/SV_ewFH4QBg074KxpA"
+  zh: "https://cambridge.eu.qualtrics.com/jfe/form/SV_6Ybm7C31C3y4hbo",
+  nl: "https://cambridge.eu.qualtrics.com/jfe/form/SV_bpkWY0yNbI6tU6q",
+  en: "https://cambridge.eu.qualtrics.com/jfe/form/SV_9Rntvd8DPw9z27Q",
+  fr: "https://cambridge.eu.qualtrics.com/jfe/form/SV_dfXOrvctE0k1KKi",
+  ar: "https://cambridge.eu.qualtrics.com/jfe/form/SV_e9fF5ghA4t9W0qW"
 };
 
 const surveyLanguageSelects = document.querySelectorAll(".survey-language");
