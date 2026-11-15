@@ -190,6 +190,18 @@ button:focus-visible {
   background: var(--accent-dark);
 }
 
+.button.is-disabled,
+.button.is-disabled:hover {
+  background: var(--muted);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.language-switch select:disabled {
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
 .button-small {
   grid-area: cta;
   justify-self: end;
